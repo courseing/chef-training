@@ -1,0 +1,17 @@
+Chef Administrators Workstation
+	download chef from 
+	https://downloads.chef.io/chef-dk/
+	rpm -ivh chefdk-1.0.3-1.el6.x86_64.rpm
+	
+Chef Server
+	manage.chef.io
+	download the starter kit in Workstation
+	unzip chef-starter.zip
+	mv files to /root/chef-repo/cookbooks
+	# To add node into Chef Server, add below IP Address
+	knife bootstrap [IP ADDRESS OF NODE] --ssh-user root --ssh-password courseing 
+
+--node-name chefNode
+	# To display all nodes 
+	Knife node list
+ 
